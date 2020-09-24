@@ -39,20 +39,13 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  let count =0
-  if (n %2 ==1){
-    for (let i = 0; i < n; i+2) {
-      count++;
-    }
-    return (count)
+  if(n%2!=0){
+    n=(n-1)/2
+    return n
+  }else{
+    n=(n)/2
+    return n
   }
-  else {
-    for (let i = 0; i < n; i++) {
-      count++;
-    }
-    return (count)
-  }
-
 }
 
 /**
